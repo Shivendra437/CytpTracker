@@ -11,7 +11,9 @@ import {
 } from "@material-ui/core";
 import "../Style/header.css";
 import { Link } from "react-router-dom";
+import { CryptoState } from "./CryptoContext";
 export default function Header() {
+  const { currency, setCurrency } = CryptoState();
   const darkTheme = createTheme({
     palette: {
       primary: {
@@ -29,11 +31,13 @@ export default function Header() {
               <Link to="/">Crypto Tracker</Link>
             </Typography>
             <Select
+              value={currency}
+              onChange={(e) => setCurrency(e.target.value)}
               variant="outlined"
-              style={{ width: 100, height: 40, marginLeft: 15 }}
+              style={{ width: 90, height: 40, marginaRight: 15 }}
             >
               <MenuItem value={"USD"}>USD</MenuItem>
-              <MenuItem Value={"INR"}>INR</MenuItem>
+              <MenuItem value={"INR"}>INR</MenuItem>
             </Select>
           </Toolbar>
         </Container>
