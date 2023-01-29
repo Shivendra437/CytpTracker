@@ -5,6 +5,13 @@
   height: 250px;
   display: flex;
   flex-direction: column;
-  padding-top: 50px;
+  padding-top: 10;
   justify-content: space-around;
+}
+.tagname {
+  display: flex;
+  height: 40%;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
