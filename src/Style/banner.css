@@ -5,7 +5,7 @@
   height: 250px;
   display: flex;
   flex-direction: column;
-  padding-top: 10;
+  padding-top: 8px;
   justify-content: space-around;
 }
 .tagname {
