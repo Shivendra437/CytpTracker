@@ -1,6 +1,7 @@
 import { Container, Typography } from "@material-ui/core";
 import React from "react";
 import "../Style/banner.css";
+import Carousel from "./Carousel";
 export default function Banner() {
   return (
     <div className="banner">
@@ -27,6 +28,7 @@ export default function Banner() {
             Get all the Info regarding hour favorite Crypto coins
           </Typography>
         </div>
+        <Carousel/>
       </Container>
     </div>
   );
